@@ -1,0 +1,15 @@
+<!--pages/system/data/add/add.wxml-->
+
+<view class='bord'>
+  <form bindsubmit='addSubmit'>
+    <view class='title'><text>创建数据</text></view>
+    <view class='input'>
+      该人脸数据对应人的名称：
+      <input id='nickname' name='nickname' type='text' placeholder='  请输入昵称'></input>
+    </view>
+    <view class='btn'>
+      <text catchtap='backPage'>返回</text>
+      <button formType='submit'>提 交</button>
+    </view>
+  </form>
+</view>

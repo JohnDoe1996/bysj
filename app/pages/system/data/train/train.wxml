@@ -1,0 +1,21 @@
+<!--pages/system/data/train/train.wxml-->
+<view class='bord'>
+
+  <view class='ing' wx:if='{{ ing }}'>
+    <view class='fir'><text>正在训练</text></view>
+    <view class='sec'><text>请勿关闭程序</text></view>
+  </view>
+
+  <view class='err' wx:if='{{ err }}'>
+    <view class='fir'><text>训练失败</text></view>
+    <view class='sec'><text>请返回检查后重试</text></view>
+    <view><button catchtap='gotoTab'>返回主页</button></view>
+  </view>
+
+  <view class='suc' wx:if='{{ suc }}'>
+    <view class='fir'><text>训练成功</text></view>
+    <view class='sec'><text>请到个人页展开数据</text></view>
+    <view><button catchtap='gotoTab'>返回主页</button></view>
+  </view>
+
+</view>

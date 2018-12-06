@@ -1,0 +1,87 @@
+/* pages/system/data/face/camara/camara.wxss */
+page{
+  background: url(http://127.0.0.1:8888/tried_img/bg/bg_camara.jpg);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+}
+
+.main{
+	background-color: rgba(127,127,127,0.5);
+  width: 100%;
+  height: 200rpx;
+}
+
+.nickname{
+  color: #000;
+	font-size: 90rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.tip{
+  color: #000;
+	font-size: 60rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.phpto{
+  width: 100%;
+  height: 900rpx;
+  margin: 30rpx 0;
+}
+
+.camera{
+  width: 100%;
+  height: 700rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.camera camera,.frame image{
+  width: 100%;
+  height: 700rpx;
+}
+
+
+.rim{
+  position: fixed;
+  top: 200rpx;
+  width: 100%;
+  height: 700rpx;
+}
+.rim image{
+  width: 100%;
+  height: 100%;
+}
+
+.fail{
+	color: #555555;
+}
+
+.pass{
+	color: greenyellow;
+}
+
+.btn{
+	display: flex;
+}
+
+.btn .take{
+	width: 100%;
+	background-color: green;
+	color: #FFFFFF;
+}
+
+.btn .retake{
+	width: 50%;
+	background: #14BFED;
+	color: #FFFFFF;
+}
+
+.btn .upload{
+	width: 50%;
+	background-color: #FFA500;
+	color: #FFFFFF;
+}

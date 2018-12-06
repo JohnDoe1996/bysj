@@ -1,0 +1,45 @@
+.data-item{
+	margin: 20rpx 50rpx;
+	border: 5rpx dashed #13BEEC;
+	border-radius: 15px;
+	display: flex;
+	justify-content: flex-start;
+  background: #FFFFFF;
+}
+
+.item-nickname {
+	display: flex;
+	justify-content: center;
+	font-size: 50rpx;
+	margin: 30rpx 0 10rpx 0;
+	color: #13BEEC;
+}
+
+.item-state{
+	margin: 10rpx 30rpx 10rpx 10rpx;
+}
+
+.item-state .pass{
+	font-size: 30rpx;
+	margin: 0 10rpx 10rpx 10rpx;
+	color: greenyellow;
+}
+
+.item-state .fail{
+	font-size: 30rpx;
+	margin: 0 10rpx 10rpx 10rpx;
+	color: #555555;
+}
+
+.item-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-btn button{
+	background-color: #FF5200;
+	border-radius: 100px;
+	color: #FFFFFF;
+	font-weight: bold;
+}

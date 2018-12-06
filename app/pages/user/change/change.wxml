@@ -1,0 +1,19 @@
+<!--pages/user/change/change.wxml-->
+
+<view class='bord'>
+  <form bindsubmit='loginSubmit'>
+    <view class='title'><text>修改密码</text></view>
+    <view class='input'>
+      原始密码：
+      <input password='true' id='oldPwd' name="oldPwd" placeholder='  请输入原始密码'></input>
+      新的密码：
+      <input password='true' id='newPwd1' name="newPwd1" placeholder='  请输入新密码'></input>
+      确认密码：
+      <input password='true' id='newPwd2' name="newPwd2" placeholder='  请再次确认密码'></input>
+    </view>
+    <view class='btn'>
+      <text catchtap='gotoRegister'>返回</text>
+      <button formType='submit'>提交</button>
+    </view>
+  </form>
+</view>

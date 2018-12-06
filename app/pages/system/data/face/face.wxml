@@ -1,0 +1,60 @@
+<!--pages/system/data/face/face.wxml-->
+
+<view class='title'>
+  <view><text>{{ nickname }}</text></view>
+</view>
+
+<view class='top'>
+  <view class='left' id='0' catchtap='gotoCamera'>
+    <view>
+      <view class='tip'><text>张眼闭嘴图</text></view>
+      <view class='img'><image src="{{ uri }}{{ img[0].uri }}?{{ random }}">点击上传图片</image></view>
+      <view class='state'>
+        <text wx:if="{{ img[0].state == '已通过' }}" class='pass'>{{ img[0].state }}</text>
+        <text wx:else class='fail'>{{ img[0].state }}</text>
+        <button id="0" catchtap='delFace'>删除</button>
+      </view>
+    </view>
+  </view>
+
+  <view class='right' id='1' catchtap='gotoCamera'>
+    <view>
+      <view class='tip'><view><text>闭眼闭嘴图</text></view></view>
+      <view class='img'><view><image src="{{ uri }}{{ img[1].uri }}?{{ random }}"></image></view></view>
+      <view class='state'>
+        <view>
+            <text wx:if="{{ img[1].state == '已通过' }}" class='pass'>{{ img[1].state }}</text>
+            <text wx:else class='fail'>{{ img[1].state }}</text>
+        </view>
+        <view><button id="1" catchtap='delFace'>删除</button></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='bottom'>
+  <view class='left' id='2' catchtap='gotoCamera'>
+    <view>
+      <view class='tip'><text>张眼张嘴图</text></view>
+      <view class='img'><image src="{{ uri }}{{ img[2].uri }}?{{ random }}">点击上传图片</image></view>
+      <view class='state'>
+        <text wx:if="{{ img[2].state == '已通过' }}" class='pass'>{{ img[2].state }}</text>
+        <text wx:else class='fail'>{{ img[2].state }}</text>
+        <button id="2" catchtap='delFace'>删除</button>
+      </view>
+    </view>
+  </view>
+
+  <view class='right' id='3' catchtap='gotoCamera'>
+    <view>
+      <view class='tip'><text>闭眼张嘴图</text></view>
+      <view class='img'><image src="{{ uri }}{{ img[3].uri }}?{{ random }}">点击上传图片</image></view>
+      <view class='state'>
+        <text wx:if="{{ img[3].state == '已通过' }}" class='pass'>{{ img[3].state }}</text>
+        <text wx:else class='fail'>{{ img[3].state }}</text>
+        <button id="3" catchtap='delFace'>删除</button>
+      </view>
+    </view>
+  </view>
+
+</view>

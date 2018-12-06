@@ -1,0 +1,62 @@
+/**index.wxss**/
+
+.ad{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 10rpx;
+	left: 15rpx;
+}
+
+.ad view text{
+  font-size: 25rpx;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 50rpx;
+}
+
+.ad button{
+	width: 170rpx;
+	height: 65rpx;
+	font-size: 25rpx;
+	background-color: rgba(255,255,255,0.2);
+	border: 5rpx solid #FFFFFF;
+	border-radius:50rpx;
+}
+
+.ad-img image{
+	width: 100%;
+	height: 750rpx;
+}
+
+.txt{ 
+	margin-top: 80rpx;
+}
+
+.wel{
+	display: flex;
+	justify-content: center;
+	font-size: 50rpx;
+}
+
+.fri{
+	display: flex;
+	justify-content: center;
+	font-size: 70rpx;
+	color: #13BEEC;
+	word-wrap: break-word;
+}
+
+.sec{
+	display: flex;
+	justify-content: center;
+	margin-left: 300rpx;
+}
+
+.timer{
+	position: fixed;
+	bottom: 10rpx;
+	right: 10rpx;
+	font-size: 30rpx;
+}
+

@@ -1,0 +1,20 @@
+<template name='datalist'>
+  <view id='{{ nickname }}' class='data-item' catchtap='onClickList'>
+    <view class='item-word'>
+      <view class='item-nickname'><text>{{ nickname }}</text></view>
+      <view class='item-state'>
+        <text wx:if="{{  state[0] == '已通过' }}" class='pass'>{{ state[0] }}</text>
+        <text wx:else class='fail'>{{ state[0] }}</text>
+        <text wx:if="{{  state[1] == '已通过' }}" class='pass'>{{ state[1] }}</text>
+        <text wx:else class='fail'>{{ state[1] }}</text>
+        <text wx:if="{{  state[2] == '已通过' }}" class='pass'>{{ state[2] }}</text>
+        <text wx:else class='fail'>{{ state[2] }}</text>
+        <text wx:if="{{  state[3] == '已通过' }}" class='pass'>{{ state[3] }}</text>
+        <text wx:else class='fail'>{{ state[3] }}</text>
+      </view>
+    </view>
+    <view class='item-btn'>
+      <button id="{{ nickname }}" catchtap='delPeople'>删除</button>
+    </view>
+  </view>
+</template>

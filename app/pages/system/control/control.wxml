@@ -1,0 +1,24 @@
+<!--pages/system/control/control.wxml-->
+<view class='connect'>
+  <button class='connect-btn'>连接</button>
+</view>
+<view class='driver'>
+  <text class='driver-txt'>当前驾驶者：</text>
+  <text class='driver-name'>{{ driver }}</text>
+</view>
+<view class='now'>
+  <text class='now-txt'>当前状态</text>
+  <text class='now-msg'>{{ now }}</text>
+</view>
+<view class='eyes'>
+  <text class='eyes-txt'>眼部参数</text>
+  <view class='eyes-data'>
+    <canvas></canvas>
+  </view>
+</view>
+<view class='mouth'>
+  <text class='mouth-txt'>嘴部参数</text>
+  <view class='mouth-data'>
+    <canvas></canvas>
+  </view>
+</view>

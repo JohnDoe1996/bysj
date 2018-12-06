@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view>
+  <view class='ad-img'>
+    <image src='http://127.0.0.1:8888/tried_img/ad/ad.jpg'></image>
+    <view class='ad'>
+      <view>
+        <text> 广告  </text>
+      </view>
+      <view>
+        <button catchtap='passAd'>跳过广告</button>
+      </view>
+    </view>
+  </view>
+  <view class='txt'>
+    <view  class='wel'>
+      <text>欢迎使用</text>
+    </view>
+    <view  class='fri'>
+      <text>疲劳驾驶监测系统</text>
+    </view>
+    <view  class='sec'>
+      <text>——数据管理端</text>
+    </view> 
+  </view>
+  <view class='timer'>
+    <text>{{ timer }}秒后跳过广告</text>
+  </view>
+</view>

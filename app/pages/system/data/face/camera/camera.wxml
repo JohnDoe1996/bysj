@@ -1,0 +1,28 @@
+<!--pages/system/data/face/camara/camara.wxml-->
+
+<view class='main'>
+  <view class='title'>
+    <view class='nickname'><text>{{ nickname }}</text></view>
+    <view class='tip'><text>{{ tip }}</text></view>
+  </view>
+</view>
+
+<view class='photo'>
+  <view  wx:if="{{ showCamera }}" class='camera'>
+    <camera device-position="front" flash="off" binderror="error"></camera>
+  </view>
+
+  <view wx:if="{{ !showCamera }}" class='frame'>
+    <image src='{{ frame }}'></image>
+  </view>
+
+  <view class='rim'>
+    <image src='/images/camera/rim.png'></image>
+  </view>
+</view>
+
+<view class='btn'>
+  <button wx:if="{{ showCamera }}" class='take' bindtap='takePhoto'>拍 照</button>
+  <button wx:if="{{ !showCamera }}" class='retake' bindtap='retakePhoto'>重 拍</button>
+  <button wx:if="{{ !showCamera }}" class='upload' bindtap='upload'>上 传</button>
+</view>

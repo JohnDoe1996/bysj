@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/login/login",
+    "pages/user/register/register",
+    "pages/system/person/person",
+    "pages/system/control/control",
+    "pages/system/data/data",
+    "pages/user/change/change",
+    "pages/system/data/add/add",
+    "pages/system/data/face/face",
+    "pages/system/data/face/camera/camera",
+    "pages/system/data/train/train"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#13BEEC",
+    "navigationBarTitleText": "疲劳驾驶监测系统",
+    "navigationBarTextStyle": "#FFFFFF"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#13BEEC",
+    "color": "black",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/system/control/control",
+        "text": "监控",
+        "iconPath": "images/tab/control@.png",
+        "selectedIconPath": "images/tab/control.png"
+      },
+      {
+        "pagePath": "pages/system/data/data",
+        "text": "数据",
+        "iconPath": "images/tab/data@.png",
+        "selectedIconPath": "images/tab/data.png"
+      },
+      {
+        "pagePath": "pages/system/person/person",
+        "text": "个人",
+        "iconPath": "images/tab/person@.png",
+        "selectedIconPath": "images/tab/person.png"
+      }
+    ]
+  }
+}

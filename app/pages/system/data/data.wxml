@@ -1,0 +1,26 @@
+<!--pages/system/data/data.wxml-->
+
+<import src="./template/item.wxml"/>
+
+<view class='add' catchtap='gotoAdd'>
+  <text>+</text>
+</view>
+
+<view id='list'>
+  <view class='list-body'>
+    <block wx:for="{{ data.dataList }}" wx:key="this" wx:for-item="item">
+      <template is="datalist" data="{{...item}}"></template>
+    </block>
+  </view>
+	<view class="sp"><text>--- end ---</text></view>
+</view>
+<view class='void'></view>
+
+<view class='post'>
+  <view>
+    <text>总共： </text>
+    <text style='color: #FFA500;font-size:50rpx;font-weight: bold;'> {{ data.count }} </text>
+    <text> 项人脸数据</text>
+  </view>
+  <button catchtap='gotoTrian'>提交数据</button>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/control/person/person.wxml-->
+
+<view class='main'>
+  <open-data type="userAvatarUrl"></open-data>
+  <view class='user'>
+    <view class='user-email'><text>{{user.email}}</text></view>
+    <view class='user-tel'><text>{{user.tel}}</text></view>
+  </view>
+</view>
+
+<view  wx:if='{{ !msgShow }}' catchtap='open' class='item'>
+  <text class='tit'>展开数据下载</text>
+</view>
+
+<view wx:if='{{ msgShow }}'  catchtap='open' class='item'>
+  <text class='tit'>合上数据下载</text>
+  <text class='dat' catchtap='deleteData'>删除数据</text>
+</view>
+
+<view class='msg' wx:if='{{ msgShow }}'>
+  <view>
+    <view class='tel'><text>下载账号：{{ download_code }}</text></view>
+    <view class='code'><text>下载秘钥：{{ secret_code }}</text></view>
+    <view>
+      <view class='hint'><text>下载秘钥有效时长只有15分钟，失效后亲刷新</text></view>
+      <button catchtap='refresh' class='refresh-btn'>刷新秘钥</button>
+    </view>
+  </view>
+</view>
+
+<view catchtap='gotoChangePwd' id='change'>
+  <text>修 改 密 码</text>
+</view>
+
+<view catchtap='logout' id='logout'>
+  <text>注 销 登 录</text>
+</view>
+
+<view style='height:200rpx;'></view>

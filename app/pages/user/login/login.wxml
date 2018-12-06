@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class='bord'>
+  <form bindsubmit='loginSubmit'>
+    <view class='title'><text>登  录</text></view>
+    <view class='input'>
+      <input id='id' name="id" placeholder='  请输入手机号/邮箱'></input>
+      <input password='true' id='pwd' name="pwd" placeholder='  请输入密码'></input>
+    </view>
+    <view class='btn'>
+      <text catchtap='gotoRegister'>注册</text>
+      <button formType='submit'>＞＞</button>
+    </view>
+  </form>
+</view>

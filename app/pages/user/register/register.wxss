@@ -1,0 +1,64 @@
+/* pages/user/register/register.wxss */
+
+page{
+  background-image:url(http://127.0.0.1:8888/tried_img/bg/bg_register.jpg);
+	background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  display:flex;
+  height: 100%;
+  justify-content:center;
+  align-items:center;
+}
+
+.bord{
+	width: 80%;
+	height: 90%;
+	background-color: rgba(250,250,250,0.8);
+	border-radius: 25rpx;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.title{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+  margin: 0 0 50rpx 0;
+}
+.title text{
+	font-size: 80rpx;
+	color: #13BEEC;
+	font-weight: bold;
+}
+
+input{
+	width: 100%;
+	height: 80rpx;
+	background-color: #FFFFFF;
+	margin: 10rpx 0 50rpx 0;
+	border: 2rpx;
+	border-color: #AAAAAA;
+	border-radius: 10rpx;
+}
+
+.btn{
+	display:flex;
+	justify-content:space-between;
+	 align-items: flex-end;
+}
+.btn text{
+	font-size: 35rpx;
+	color: #AAAAAA;
+	text-decoration: underline;
+}
+
+button{
+	width: 50%;
+	margin-right: 0;
+	background-color: #FFA500;
+	font-weight: bold;
+	font-size: large;
+	color: #FFFFFF;
+}

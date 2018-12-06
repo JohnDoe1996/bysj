@@ -1,0 +1,130 @@
+/* pages/control/person/person.wxss */
+
+page{ background-color: #EEEEEE;}
+
+.main{
+	background-color: #13BEEC;
+	display: flex;
+}
+
+.main open-data{
+	width: 150rpx;
+	height: 150rpx;
+	display: flex;
+	margin: 30rpx 30rpx;
+}
+
+.main .user{
+	margin: 50rpx 0;
+}
+
+.main .user .user-email text{
+	color: #FFFFFF;
+	font-size: larger;
+}
+
+.main .user .user-tel text{
+	color: #FFFFFF;
+	font-size: small;
+}
+
+.main .change{
+	position:absolute;
+	top: 120rpx;
+	right:30rpx;
+}
+.main .change button{
+	width: 200rpx;
+	height: 75rpx;
+	font-size: small;
+	color: #EEEEEE;
+	background-color: #14BFED;
+	border: 1rpx;
+	border-style:solid;
+	border-color: #555555;
+	border-radius:50rpx;
+}
+
+.item{
+  margin-top: 10rpx;
+	background-color: #FFFFFF;
+	height: 80rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tit{
+	margin-left: 100rpx;
+}
+
+.msg{
+	width: 100%;
+	height: 500rpx;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.dat{
+	margin-right: 60rpx;
+	color: #aaa;
+}
+
+.msg > view{
+	width: 90%;
+	height: 450rpx;
+	background-color: #FFFFFF;
+	border-radius: 25rpx;
+	margin-top: 30rpx;
+}
+
+.tel,.code{
+	margin-left: 50rpx;
+	margin-right: 50rpx;
+	margin-top: 50rpx;
+}
+
+.hint{
+	margin: 50rpx 30rpx 30rpx 30rpx;
+	font-size: 30rpx;
+	color: #555555;
+}
+
+.refresh-btn{
+	background: #14BFED;
+	color: #FFFFFF;
+	width: 300rpx;
+}
+
+#change{
+	background-color: rgb(255, 187, 0);
+  width: 100%;
+	height: 80rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  position:fixed;
+  bottom: 150rpx
+}
+#change text{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 50rpx;
+}
+
+#logout{
+	background-color: #FF0000;
+  width: 100%;
+	height: 80rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  position:fixed;
+  bottom: 50rpx
+}
+#logout text{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 50rpx;
+}

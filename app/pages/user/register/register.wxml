@@ -1,0 +1,21 @@
+<!--pages/user/register/register.wxml-->
+<view class='bord'>
+  <form bindsubmit='registerSubmit'>
+    <view class='title'><text>注  册</text></view>
+    <view class='input'>
+      手机号：
+      <input id='tel' name='tel' type='number' placeholder='  请输入手机号'></input>
+      Email：
+      <input id='email' name='email' placeholder='  请输入邮箱'></input>
+      密码：
+      <input password='true' id='pwd1' name='pwd1' placeholder='  请输入密码'></input>
+      确认密码：
+      <input password='true' id='pwd2' name='pwd2' placeholder='  请再次输入密码'></input>
+    </view>
+    <view class='btn'>
+      <text catchtap='backtoLogin'>返回</text>
+      <button formType='submit'>提 交</button>
+    </view>
+  </form>
+</view>
+
